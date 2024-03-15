@@ -1,0 +1,53 @@
+html{
+    background-color: #f1f5f0;
+    width: 800px;
+    height: 700px;
+}
+
+div#main-block{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    top: 125px;
+    left: 50%;
+    padding: 25px;
+    margin: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-stretch: condensed;
+    background-color: white;
+}
+
+img#img-reviewer{
+    position: absolute;
+    border-radius: 100%;
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    top: 8px;
+    left: 141px;
+}
+
+div#name-reviewer{
+    position: absolute;
+    top: 225px;
+    text-align: right;
+    left: 230px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+div#function-reviewer{
+    position: absolute;
+    top: 270px;
+    left: 213px;
+    text-align: center;
+}
+
+div#review-text{
+    position: relative;
+    font-stretch: expanded;
+    top: 295px;
+    text-align: left;
+    left: 10px;
+}
