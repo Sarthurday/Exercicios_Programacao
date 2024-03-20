@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+nav button.kebab-menu{
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    position: relative;
+    border: none;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    top: -55px;
+    left: 1250px;
+}
+
+nav button.kebab-menu:hover{
+    background-color: rgba(0,0,0,0);
+    transition-duration: 0.5s;
+    filter: invert(1);
+}
+
+ul{
+    list-style-type: none;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    top: -110px;
+    margin-left: 950px;
+}
+
+li{
+    padding: 3px;
+}
+
+/*BY DEFAULT HIDE LINKS*/
+.links{
+    height: 0rem;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+/*TOGGLE CLASS*/
