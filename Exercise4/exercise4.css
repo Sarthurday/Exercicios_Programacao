@@ -112,4 +112,41 @@
     box-sizing: border-box;
     font-family: Poppins, sans-serif;    
 }
+
+body{
+display: flex;
+color: white;
+padding: 0px 10px 5px 10px;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+background: #0d6fed;
+}
+
+.wrapper{
+  width: 720px;
+  background-color: #000;
+  border-radius: 5px;
+}
   
+.wrapper header{
+  font-size: 22px;
+  font-weight: 750;
+  padding: 20px 30px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.wrapper form{
+  padding: 35px 30px;
+}
+
+form{
+  gap: 10px;
+}
+
+form .dbl-field{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+  justify-content: space-evenly;
+}
