@@ -118,6 +118,7 @@ display: flex;
 color: white;
 padding: 0px 10px 5px 10px;
 min-height: 100vh;
+flex-basis: 30%;
 align-items: center;
 justify-content: center;
 background: #0d6fed;
@@ -140,13 +141,38 @@ background: #0d6fed;
   padding: 35px 30px;
 }
 
-form{
-  gap: 10px;
+form .dbl-field{
+  row-gap: 35px;
+  column-gap: 60px;
+  display: flex;
+  flex: 0 0 auto;
+  margin-bottom: 25px;
+  flex-flow: row wrap;
 }
 
-form .dbl-field{
-  display: flex;
-  align-items: center;
-  margin-bottom: 25px;
-  justify-content: space-evenly;
+form .field{
+  flex-grow: 1;
+}
+
+form .field i{
+  padding-top: 10px;
+}
+
+form .field input, form .field textarea{
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+form div.button-area #submit{
+  float: right;
+}
+
+form div.button-area span{
+  float: right;
+}
+
+span{
+  padding-right: 10px;
 }
