@@ -1,4 +1,4 @@
-.poppins-thin {
+/* .poppins-thin {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -14,7 +14,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
+  } */
   
   .poppins-regular {
     font-family: "Poppins", sans-serif;
@@ -22,7 +22,7 @@
     font-style: normal;
   }
   
-  .poppins-medium {
+  /* .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -104,7 +104,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 900;
     font-style: italic;
-  }
+  } */
 
   *{
     margin: 0;
@@ -119,6 +119,7 @@ color: white;
 padding: 0px 10px 5px 10px;
 min-height: 100vh;
 flex-basis: 30%;
+flex-direction: row;
 align-items: center;
 justify-content: center;
 background: #0d6fed;
@@ -141,13 +142,16 @@ background: #0d6fed;
   padding: 35px 30px;
 }
 
+.wrapper form i{
+  position: relative;
+}
+
 form .dbl-field{
-  row-gap: 35px;
-  column-gap: 60px;
+  gap: 50px;
   display: flex;
-  flex: 0 0 auto;
   margin-bottom: 25px;
-  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 form .field{
