@@ -113,6 +113,11 @@
     font-family: Poppins, sans-serif;    
 }
 
+@media screen and (max-width: 700px){
+  .wrapper form{
+    flex-direction: column;
+  }
+}
 body{
 display: flex;
 color: white;
@@ -142,8 +147,31 @@ background: #0d6fed;
   padding: 35px 30px;
 }
 
+
+/* A linha de código abaixo define o estilo da imagem que se encontra ao lado do placeholder da caixa de entrada */
+
 .wrapper form i{
   position: relative;
+  top: -83%;
+  left: 2%;
+  color: rgba(0,0,0, 0.3)
+
+}
+
+.wrapper form i.fas.fa-globe{
+  position: relative;
+  top: -82%;
+  left: 1%;
+  color: rgba(0,0,0, 0.3)
+
+}
+
+.wrapper form i.fa-solid.fa-comment{
+  position: relative;
+  top: -82%;
+  left: 1%;
+  color: rgba(0,0,0, 0.3)
+
 }
 
 form .dbl-field{
@@ -152,6 +180,32 @@ form .dbl-field{
   margin-bottom: 25px;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+/* Esses códigos abaixo são responsáveis por definir o espaçamento do placeholder das caixas de entrada; */
+
+/* O primeiro código refere-se a caixa de entrada de nome. */
+
+/* A segunda, ao email, a terceira ao telefone e, a quarta, ao site. */
+
+input[id^='name']::-webkit-input-placeholder{
+  text-indent: 22px;
+}
+
+input[id^='email']::-webkit-input-placeholder{
+  text-indent: 22px;
+}
+
+input[id^='phone']::-webkit-input-placeholder{
+  text-indent: 22px;
+}
+
+input[id^='website']::-webkit-input-placeholder{
+  text-indent: 25px;
+}
+
+textarea[id^='message']::-webkit-input-placeholder{
+  text-indent: 15px;
 }
 
 form .field{
@@ -177,6 +231,10 @@ form div.button-area span{
   float: right;
 }
 
+textarea{
+  width: 665px;
+  height: 150px;
+}
 span{
   padding-right: 10px;
 }
